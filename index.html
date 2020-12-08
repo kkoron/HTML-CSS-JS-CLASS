@@ -9,42 +9,73 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
+/*  margin: 16px; */
+  padding-left: 10px;
+  padding-right:10px;
 }
+
+body {  font-family: Helvetica;
+}
+
 h1 {
   text-align: center;
   margin-bottom: 15px;
+  font-size: 175%
 }
 
 div {position:relative;
   } 
 
+
+
 .pdetail {
-  border:none;
+/*  clear:both; */
   border: 1px solid black;  
   background-color: #a9a9a9; 
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  overflow: hidden;
-/*  color: white; */
+/*  width: 90%;  */ 
+/*  height: 150px; */ 
+/*  margin-right: 10px;
+  margin-left: 10px; */ 
+/*  overflow: hidden; 
+  padding-left: 10px;
+  padding-right: 10px; */
+ /* color: white; */
 }
 
-.phead {position: absolute; 
+.phead { /*position: absolute; */  
+        float: right;  
         border: 1px solid black;  
         text-align: center;
-        background-color:cyan;
-        clear: left;
-        top:0px;
-        right:21px; 
-        margin-bottom: 0px;
+        font-size: 125%;
+        margin-top: 16px;
+        margin-bottom: 5px;
+/*        clear: left;  */
+  /*      top:0px;
+        right:20px; */
+
+ /*       margin-top: 16px; */ 
+ /*       margin-right: 16px; */ 
         width:100px;
-        height:30px;}
+        height:25px;
+        }
+
+.head1 {
+  background-color: #E9967A;
+}
+
+.head2 {
+  background-color: #DC143C;
+  color: white;
+}
+
+.head3 {
+  background-color: #FFF8DC;
+}
 
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
+  position: relative;
 }
 
 /********** Desktop devices only **********/
@@ -64,6 +95,11 @@ div {position:relative;
   }
   .col-lg-4 {
     width: 33.33%;
+height: 150px;
+overflow: hidden; 
+
+/*  margin-bottom: 15px;  */
+/*  border:1px solid black; */
   }
   .col-lg-5 {
     width: 41.66%;
@@ -114,6 +150,11 @@ div {position:relative;
   }
   .col-md-6 {
     width: 50%;
+height: 150px;
+overflow: hidden; 
+/*padding-top: 10px; */
+/*  margin-bottom: 15px;  */
+/*  border:1px solid black; */
   }
   .col-md-7 {
     width: 58.33%;
@@ -132,6 +173,10 @@ div {position:relative;
   }
   .col-md-12 {
     width: 100%;
+height: 150px;
+overflow: hidden; 
+/*padding-top: 10px; */
+
   }
 }
 /********** Mobile devices only **********/
@@ -175,31 +220,38 @@ div {position:relative;
   }
   .col-sm-12 {
     width: 100%;
+height: 150px;
+overflow: hidden; 
+/*padding-top: 10px; */
+ /* margin-bottom: 15px;  */
+ /* border:1px solid black; */
   }
 }
 
 </style>
 </head>
 <body>
-<h1>Responsive Layout</h1>
+<h1>Our Menu</h1>
 <!-- HI -->
 <div class="row">
   <div class="col-lg-4 col-md-6 col-sm-12">
-    <p class="phead head1" >Chicken</p>
+    
+      <p class="phead head1" >Chicken</p>
         
-   <p class="pdetail" >  <span> <br> <br> </span>
+      <p class="pdetail" > <br> <br> 
    1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis aliquet elit. Sed vitae nibh gravida, accumsan massa a, pulvinar tortor. Aenean eu lobortis erat. Sed pharetra erat a nunc venenatis, et luctus sapien cursus. Suspendisse potenti. Maecenas semper a velit id mattis. Ut elit magna, gravida et dui id, porta eleifend lorem. Duis ut ultrices leo, sit amet feugiat massa. Integer at nunc in lorem pretium aliquam. Pellentesque non lectus non dolor accumsan condimentum. Suspendisse potenti. Praesent ultricies libero at lectus commodo, eget pulvinar risus auctor. In ac auctor ante, mattis cursus erat.</p>
+
   </div>
   <div class="col-lg-4 col-md-6 col-sm-12">
         <p class="phead head2" >Beef</p>
         
-    <p class="pdetail" > <span> <br> <br> </span>
+    <p class="pdetail" > <br> <br>
     2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis aliquet elit. Sed vitae nibh gravida, accumsan massa a, pulvinar tortor. Aenean eu lobortis erat. Sed pharetra erat a nunc venenatis, et luctus sapien cursus. Suspendisse potenti. Maecenas semper a velit id mattis. Ut elit magna, gravida et dui id, porta eleifend lorem. Duis ut ultrices leo, sit amet feugiat massa. Integer at nunc in lorem pretium aliquam. Pellentesque non lectus non dolor accumsan condimentum. Suspendisse potenti. Praesent ultricies libero at lectus commodo, eget pulvinar risus auctor. In ac auctor ante, mattis cursus erat.</p>
   </div>
   <div class="col-lg-4 col-md-12 col-sm-12">
         <p class="phead head3" >Sushi</p>
          
-       <p class="pdetail" >  <span> <br> <br> </span>
+       <p class="pdetail" >  <br> <br>
        3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis aliquet elit. Sed vitae nibh gravida, accumsan massa a, pulvinar tortor. Aenean eu lobortis erat. Sed pharetra erat a nunc venenatis, et luctus sapien cursus. Suspendisse potenti. Maecenas semper a velit id mattis. Ut elit magna, gravida et dui id, porta eleifend lorem. Duis ut ultrices leo, sit amet feugiat massa. Integer at nunc in lorem pretium aliquam. Pellentesque non lectus non dolor accumsan condimentum. Suspendisse potenti. Praesent ultricies libero at lectus commodo, eget pulvinar risus auctor. In ac auctor ante, mattis cursus erat.</p>
   </div>
  
